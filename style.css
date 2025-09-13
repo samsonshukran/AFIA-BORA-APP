@@ -45,10 +45,7 @@ h2 {
     background-color: #b89999;
   
 
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  
 }
 
 .navbar a {
@@ -64,46 +61,97 @@ h2 {
 }
 
 .home,  .health, .public, .policy, .agencies {
-    padding: 5px;
+
     margin: 2px;
     background-color: #eb3508;
     border-radius: 5px;
     height: 50px;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100px;
 }
 
 
 
 
 
- @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Start right below navbar */
-        right: 0;
-        background: #00796b; /* Same as navbar */
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      }
 
-      .navbar a {
-        padding: 12px 16px;
-      }
 
-      .navbar .nav-links {
-        display: flex;
-      }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📱 Make navbar links stack as columns on smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;      /* Stack links vertically */
+    align-items: stretch;        /* Make them take full width */
+    gap: 0;                      /* Remove extra space between links */
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;                /* Full-width buttons */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.1rem;          /* Slightly larger for touch screens */
+  }
+}
+
+/* 📱 Medium screens (481px - 768px) for better spacing */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar a {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr); /* Icon + text */
+    gap: 10px;                  /* Space between icon and text */
+    justify-items: center; 
+    
+    /* Center items in each grid cell */
+    
+  }
+}
+
+/* 📱 Even smaller screens (<480px) for extra readability */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 1.2rem;
+    text-align: left;           /* Align left for a clean column look */
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr); /* Icon + text */
+    gap: 10px;     
+    width: 100%;            /* Space between icon and text */
+  }
+}
+
+
 
 
 
 
 
   .quick-actions {
-      max-width: 900px;
+      max-width: 100%;
       margin: 30px auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -153,7 +201,7 @@ h2 {
 
 
         .alerts-section {
-      max-width: 900px;
+      max-width: 100%;
       margin: 20px auto;
       padding: 15px;
     }
@@ -373,3 +421,68 @@ h2 {
       margin: 0;
       opacity: 0.8;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
