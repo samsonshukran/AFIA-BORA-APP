@@ -537,11 +537,17 @@ h2 {
   border-radius: 8px;
 }
 
+
+
+
+
+
+
 /* SLIDER STYLING */
 .slider {
   width: 100%;
   max-width: 1000px;
-  height: 300px;
+  height: 350px;
   margin: auto;
   overflow: hidden;
   border-radius: 12px;
@@ -551,13 +557,26 @@ h2 {
 
 .slides {
   display: flex;
-  width: 400%;
+  width: 100%;
   animation: slide 12s infinite;
 }
 
 .slides img {
-  width: 100%;
+  width: 50%;
+  height: 350px;
   object-fit: cover;
+  border-radius: 12px;
+  transition: transform 1s ease;
+  flex-shrink: 0;
+  border: 2px solid transparent;
+}
+
+.slides img:hover {
+  transform: scale(1.05);
+  border: 2px solid hsl(253, 91%, 48%);
+  padding: 2px;
+  margin: 20px 0;
+  gap: 5px;
 }
 
 /* Keyframes for Auto Slide */
