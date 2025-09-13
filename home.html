@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afia-Bora-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to Afia-Bora</h1>
+        <h2>Your Health, Our Priority</h2>
+
+        <nav class="navbar">
+            <a class="home" href="home.html">Home</a>
+            <a class="health" href="health-services.html">Health Services</a>
+            <a class="public" href="public-health.html">Public Health</a>
+            <a class="policy" href="policy-planning.html">Policy & Planning</a>
+            <a class="agencies" href="agencies-resources.html">Agencies / Resources</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <section class="intro">
+           
+            <h2>Welcome to the Ministry of Health – Kenya</h2>
+            <p>Your gateway to health services, policies, and updates that keep Kenya healthy.</p>
+        </section>
+
+
+        
+  <section class="quick-actions">
+    <a href="#facilities" class="action-card">
+      <span class="action-icon">🏥</span>
+      <span class="action-title"  onclick="showMap()">Find Facility</span>
+
+    </a>
+
+    <a href="#vaccination" class="action-card">
+      <span class="action-icon">💉</span>
+      <span class="action-title">Vaccination Info</span>
+    </a>
+
+    <a href="#events" class="action-card">
+      <span class="action-icon">📅</span>
+      <span class="action-title">Health Events</span>
+    </a>
+
+    <a href="#alerts" class="action-card">
+      <span class="action-icon">⚠️</span>
+      <span class="action-title">Outbreak Alerts</span>
+    </a>
+
+    <a href="#news" class="action-card">
+      <span class="action-icon">📰</span>
+      <span class="action-title">News & Updates</span>
+    </a>
+
+    <a href="#hotlines" class="action-card">
+      <span class="action-icon">📞</span>
+      <span class="action-title">Emergency Hotlines</span>
+    </a>
+  </section>
+
+
+  <section class="alerts-section">
+    <div class="alert-card">
+      <div class="alert-icon">⚠️</div>
+      <div class="alert-content">
+        <h4>Cholera Outbreak Alert</h4>
+        <p>Cases reported in Mombasa & Kilifi. Wash hands regularly, use treated water, and seek treatment if you have severe diarrhea.</p>
+      </div>
+    </div>
+
+    <div class="alert-card info">
+      <div class="alert-icon">💉</div>
+      <div class="alert-content">
+        <h4>National Polio Immunization Drive</h4>
+        <p>Children under 5 should receive the vaccine between Sept 15 - Sept 20 at your nearest health facility.</p>
+      </div>
+    </div>
+
+    <div class="alert-card success">
+      <div class="alert-icon">✅</div>
+      <div class="alert-content">
+        <h4>COVID-19 Situation Update</h4>
+        <p>Cases remain low nationwide. Continue observing hygiene measures and get your booster shot if due.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <section class="highlight-section">
+    <div class="highlight-container">
+      <div class="highlight-slide active">
+        <h3>Minister's Welcome Message</h3>
+        <p>"Together, we strive to build a healthy and productive nation. Explore our app for services, data, and health education."</p>
+      </div>
+
+      <div class="highlight-slide">
+        <h3>National Malaria Prevention Week</h3>
+        <p>Free distribution of treated mosquito nets from Sept 20-25. Visit your nearest facility to collect yours.</p>
+      </div>
+
+      <div class="highlight-slide">
+        <h3>New Health Policy Launched</h3>
+        <p>The Ministry has released the 2025–2030 Health Strategic Plan. Read it under Policies & Documents tab.</p>
+      </div>
+    </div>
+
+    <!-- Dots navigation -->
+    <div class="highlight-nav">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+  </section>
+
+
+
+   <!-- 4️⃣ Health Tip of the Day -->
+  <div class="health-tip">
+    <h4>💡 Health Tip of the Day</h4>
+    <p>Eat a balanced diet and exercise for at least 30 minutes a day.</p>
+  </div>
+
+  <!-- 5️⃣ Universal Search Bar -->
+  <div class="search-section">
+    <input type="text" placeholder="Search hospitals, policies, FAQs...">
+    <button>🔍 Search</button>
+  </div>
+
+  <!-- 6️⃣ Footer Links -->
+  <footer>
+    <div class="footer-links">
+      <a href="#about">About MoH</a>
+      <a href="#careers">Careers</a>
+      <a href="#social">Social Media</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>© 2025 Ministry of Health, Kenya | All Rights Reserved</p>
+  </footer>
+
+
+
+
+
+
+
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+       <script src="script.js"></script>
+</body>
+</html>
